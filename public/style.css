@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+form{
+    display:flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+form input{
+    
+    border-radius: 10px;
+    appearance: none;
+    border: none;
+    outline: none;
+    height: 35px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px #ef0303;
+    padding: 0 10px;
+    width: 30%;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    position: fixed;
+    top:30px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #5a5a5a;
+}
+
+
+#currentPage{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.allVideos{
+    width:20%; 
+    margin-top: 60px;
+    margin-right: 20px;
+}
+.allVideos .ytVideo{
+    margin: 10px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    background-color: #767879;
+    background-image: linear-gradient(
+99deg
+, #767879 0%, #cfd0d6 100%);
+    padding-bottom: 20px;
+    border-bottom: 2px solid #c31919;
+}
+.thumb{
+    width:100%;
+}
+.iconPlay{
+    width: 30%;
+    position: absolute;
+}
+.currentVideo{
+    width: 75%;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+.videoYT{
+    position: fixed;
+    top: 80px;
+    left: 5%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.currentVideo iframe{
+width:80%;
+height: 400px;
+}
+.alldesc{
+    width:80%;
+}
+.title{
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Rubik', sans-serif;
+}
+.alldesc span{
+    font-size: 17px;
+    font-weight: 600;
+}
+.alldesc div {
+margin-top: 10px;
+}
+.allVideos .addPlayList{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ef0303;
+    padding: 5px;
+    border-radius: 9px;
+    color: #efece8;
+    font-weight: 600;
+    border: 1px solid #4e0a18;
+}
+
+.openPlayListVideoSpan{
+    height: auto;
+    background: #d6d6d6;
+    top: 95px;
+    z-index: 444444444444444;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.playList span div{
+    display: flex;
+    margin-left: 7px;
+    margin-top: 7px;
+    font-weight: 600;
+    font-size: 13px;
+}
+.playList img{
+    width: 25%;
+    height: auto;
+    margin:5px 0;
+    cursor:pointer;
+}
+.playListDesc{
+    background: #403f3e;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    color: #e8e6e6;
+}
+.playListDesc div{
+    font-size: 22px;
+    font-weight: 800;
+    padding:10px;
+}
+.openPlayList{
+    cursor: pointer;
+}
+.closePlayList{
+    display:none;
+    cursor: pointer;
+}
+.closePlayListVideoSpan{
+    display:none;
+}
+.ytVideo h3{
+    width: 90%;
+    margin: 11px 0;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 850px){
+    .ytVideo h3{
+        width: 90%;
+        margin:0;
+        margin-top: 15px;
+    }
+    #currentPage {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .currentVideo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .videoYT {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top:0;
+        left: 0;
+    }
+    .allVideos {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 100%;
+        margin-top: 60px;
+        margin-right: 0px;
+    }
+    form input{
+        position: relative;
+        top: 0;
+    left: 0;
+    transform: none;
+    width:70%;
+    margin-top: 20px;
+    }
+    .currentVideo iframe {
+        width: 99%;
+        height: 300px;
+    }
+    .alldesc {
+        width: 100%;
+    }
+    .description{
+        padding: 0 15px;
+    }
+    .playList span div{
+        font-size: 17px;
+    }
+}
